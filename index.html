@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festava-Live</title>
+
+    <!-- Icon Links  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <!-- *** ==== HEADER SECTION START *** ====-->
+    <header>
+        <div class="container top-bar">
+            <i class='bx bx-user'></i>
+            <p>Welcome to Music Festival 2023</p>
+        </div>
+    </header><!-- *** ==== HEADER SECTION END *** ====-->
+    
+    <nav><!-- *** ==== NAV SECTION START *** ====-->
+        <div class="container nav-items"><!-- Nav Container Start -->
+            <a href="#" class="logo">Festava-Live</a>
+            <div class="menu-bar"><!-- Menu Bar Start -->
+                <div class="container"><!-- Menu Bar Container Start -->
+                    <ul id="menuCollapse">
+                        <li><a href="#heroSection" onclick="home()" id="homeLia">Home</a></li>
+                        <li><a href="#aboutSection" onclick="about()" id="aboutLia">About</a></li>
+                        <li><a href="#artistSection" onclick="artist()" id="artistLia">Artists</a></li>
+                        <li><a href="#scheduleSection" onclick="schedule()" Id="scheduleLia">Schedule</a></li>
+                        <li><a href="#pricingSection" onclick="pricing()" id="pricingLia">Pricing</a></li>
+                        <li><a href="#contactSection" onclick="contact()" id="contactLia">Contact</a></li>
+                    </ul>
+                </div><!-- Menu Bar Container End -->
+            </div><!-- Menu Bar End -->
+ 
+            <div class="button-wrapper d-flex align-items-center"><!-- Nav Button Wrapper Start -->
+                <a href="ticket.html" class="sm-button">Buy Ticket</a>
+                <div class="toggle-btn" id="toggleButton" onclick="togglebtn()"><!-- Toggle Btn Start -->
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div><!-- Toggle Btn End -->
+            </div><!-- Nav Button Wrapper End -->
+        </div><!-- Nav Container End -->
+    </nav><!-- *** ==== NAV SECTION END *** ====-->
+                
+        <section class="hero" id="heroSection"><!-- *** ==== HERO SECTION START *** ====-->
+            <video autoplay muted loop id="myVideo"><!-- Hero Video Start -->
+                <source src="Video/vid-1.mp4" type="video/mp4">
+            </video><!-- Hero Video End -->
+            
+            <div class="container"><!-- Hero Headings Start -->
+                <div class="hero-headings">
+                    <p>FESTAVA LIVE PRESENTS</p>
+                    <h1>Night Live 2023</h1>
+                    <a href="#sm" class="sm-button">Let's begin</a>
+                </div>
+            </div><!-- Hero Headings End -->
+
+                <div class="hero-details-content"><!-- Hero Contact Start -->
+                    <div class="container"><!-- Hero Contact Container Start -->
+                        <div class="hero-detail-box">
+                            <i class='bx bx-time-five'></i>
+                            <span>10 - 12<sup>th</sup>, Dec 2023</span>
+                        </div>
+                        <div class="hero-detail-box">
+                            <i class='bx bx-map'></i>
+                            <span> National Center, United States</span>
+                        </div>
+                        
+                        <div class="social-icons"><!-- Hero Social Icons Start -->
+                            <ul>
+                                <li class="social-txt">Share:</li>
+                                <li>
+                                    <a href="#lnk">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#lnk">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#lnk">
+                                        <i class='bx bxl-instagram'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- Hero Social Icons End -->
+                    </div><!-- Hero Contact Container End -->
+                </div><!-- Hero Contact End -->
+        </section><!-- *** ==== HERO SECTION END *** ====-->
+      
+        <section class="about" id="aboutSection"><!-- *** ==== ABOUT SECTION START *** ====-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-leftBox">
+                            <h2>About Festava 2022</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum possimus enim aliquam facilis hic sequi voluptatibus accusantium aliquid iste maxime. Nemo, adipisci vero!</p>
+                            <h4>Once in Lifetime Experience</h4>
+                            <p>Enim aliquam facilis hic sequi voluptatibus accusantium aliquid iste maxime  adipisicing dipisci minus.</p>
+                            <h4>Whole Night Party</h4>
+                            <p>Sequi voluptatibus accusantium aliquid iste maxime</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="about-rightBox">
+                            <img src="Image/About-1.jpg" alt="" class="image img-fluid">
+                            <div class="txt-container">
+                                <div class="icon-bg">
+                                    <i class='bx bx-user'></i>
+                                </div>
+                                <div class="img-heading">
+                                    <h3>a happy moment</h3>
+                                    <p>your amazing festival experience with us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- ABOUT SECTION END-->
+
+        <section class="artist" id="artistSection"><!-- *** ==== ARTISTS SECTION START *** ==== -->
+           <div class="container"><!-- Container Start-->
+                <div class="row"> <!-- Row Start-->
+                    <div class="col-lg-12"> <!-- heading col-->
+                        <h2 class="section-heading">Meet Artists</h2>
+                    </div>
+                
+                    <div class="col-lg-5"> <!-- Image col 1 Start-->
+                        <div class="artists-thumb"> <!-- Artists Thumb 1 Strat-->
+                            <div class="artists-image-wrap">
+                                <img src="Image/Artist-1.jpg" alt="">
+                            </div>
+
+                            <div class="artists-hover">
+                                <p><strong>Name:</strong>Madona</p>
+                                <p><strong>Birthdate:</strong>August 16, 1958</p>
+                                <p><strong>Music:</strong>Pop, R&B</p>
+                                <hr>
+                                <p><strong>Youtube Channel:</strong><a href="#Madana">Madona Official</a></p>
+                            </div>
+                        </div><!-- Artists Thumb 1 End-->
+                    </div> <!-- Image col 1 End-->
+                    
+                    <div class="col-lg-5"> <!-- Image col 2 Start-->
+                        <div class="artists-thumb"> <!-- Artists Thumb 2 Strat-->
+                            <div class="artists-image-wrap">
+                                <img src="Image/Artist-2.jpg" alt="">
+                            </div>
+                            
+                            <div class="artists-hover">
+                                <p><strong>Name:</strong>Rihana</p>
+                                <p><strong>Birthdate:</strong>Feb 20, 1988</p>
+                                <p><strong>Music:</strong>Country</p>
+                                <hr>
+                                <p><strong>Youtube Channel:</strong><a href="#Rihana">Rihana Official</a></p>
+                            </div>
+                        </div> <!-- Artists Thumb 2 End -->
+                        
+                        <div class="artists-thumb"> <!-- Artists Thumb 3 Strat -->
+                            <div class="artists-image-wrap">
+                                <img src="Image/Artist-3.jpg" alt="">
+                            </div>
+                            
+                            <div class="artists-hover">
+                                <p><strong>Name:</strong>Bruno Bros</p>
+                                <p><strong>Birthdate:</strong>October 8, 1985</p>
+                                <p><strong>Music:</strong>Pop</p>
+                                <hr>
+                                <p><strong>Youtube Channel:</strong><a href="#Bruno">Bruno Official</a></p>
+                            </div>
+                        </div> <!-- Artists Thumb 3 End-->
+                    </div> <!-- Image col 2 End-->
+                </div> <!-- Row End-->
+           </div><!-- Container End-->
+        </section><!-- *** ==== ARTISTS SECTION END *** ====-->
+
+        <section class="schedule" id="scheduleSection"><!-- *** ==== SCHEDULE SECTION START === *** -->
+            <div class="container"> <!-- Container Start-->
+                <div class="row"> <!-- Row Start-->
+                    <div class="col-lg-12"> <!-- COl Start-->
+                        <h2 class="section-heading">Event Schedule</h2>
+                        <div class="table-responsive"> <!-- Table Responsive-->
+                            <table> <!-- Table Start-->
+                                <thead class="table-head">
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Wednesday</th>
+                                        <th>Thursday</th>
+                                        <th>Friday</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr> <!-- Table Body tr 1 start-->
+                                        <th>Day 1</th>
+                                        <td class="pop-img">
+                                            <h3>Pop Night</h3>
+                                            <p>5:00 - 7:00 PM</p>
+                                            <p>By Adele</p>
+                                            <div class="td-overlay"></div>
+                                        </td>
+                                        <td class="td-bg1"></td>
+                                        <td class="roll-img">
+                                            <h3>Rock & Roll</h3>
+                                            <p>7:00 - 11:00 PM</p>
+                                            <p>By Rihana</p>
+                                            <div class="td-overlay"></div>
+                                        </td>
+                                    </tr> <!-- Table Body tr 1 End-->
+
+                                    <tr><!-- Table Body tr 2 Start-->
+                                        <th>Day 2</th>
+                                        <td class="bg1"></td>
+                                        <td class="bg2">
+                                            <h3>DJ Night</h3>
+                                            <p>6:30 - 9:30 PM</p>
+                                            <p>By Rihana</p>
+                                        </td>
+                                        <td class="bg3"></td>
+                                    </tr> <!-- Table Body tr 2 End-->
+                                    
+                                    <tr><!-- Table Body tr 3 Start-->
+                                        <th>Day 2</th>
+                                        <td class="music-img">
+                                            <h3>Country Music</h3>
+                                            <p>4:30 - 7:30 PM</p>
+                                            <p>By Rihana</p>
+                                            <div class="td-overlay"></div>
+                                        </td>
+                                        <td class="bg3">
+                                            
+                                        </td>
+                                        <td class="bg2">
+                                            <h3>Free Styles</h3>
+                                            <p>6:00 - 10:00 PM</p>
+                                            <p>By Members</p>
+                                        </td>
+                                    </tr> <!-- Table Body tr 3 End-->
+                                </tbody>
+                            </table> <!-- Table End-->
+                        </div> <!-- Table Responsive End-->
+                    </div> <!-- Col End-->
+                </div> <!-- Row End-->
+            </div><!-- Container End-->
+        </section><!-- *** ==== SCHEDULE SECTION END *** ==== -->
+
+        <section class="pricing" id="pricingSection"><!-- *** ==== PRICING SECTION START *** ==== -->
+            <div class="container"><!-- Pricing Container Start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-heading">Plans, you' love</h2>
+                    </div>
+                </div>
+                    
+                <div class="row justify-content-center"> <!-- Row 2 Start -->
+                        <div class="col-lg-6">
+                            <div class="pricing-thumb">
+                                <div class="pricing-top-content">
+                                    <h3>
+                                        <small>Early Bird</small>
+                                        $120
+                                    </h3>
+        
+                                    <p>Including good things:</p>
+    
+                                    <div class="pricing-tag">
+                                        <p>Save up to <span>50%</span></p>
+                                    </div>
+                                </div>
+
+                                <ul class="pricing-list">
+                                    <li>platform for potential customers</li>
+                                    <li>digital experience</li>
+                                    <li>high-quality sound</li>
+                                    <li>standard content</li>
+                                </ul>
+
+                                <a href="ticket.html" class="sp-link">
+                                    <span>Buy Ticket</span>
+                                    <svg class="icon">
+                                        <g fill="none" stroke="currentColor">
+                                            <circle cx="16" cy="16" r="15.5"></circle>
+                                            <line x1="10" y1="18" x2="16" y2="12" class="line1"></line>
+                                            <line x1="16" y1="12" x2="22" y2="18" class="line2"></line>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6"> <!-- Col 2 Start-->
+                            <div class="pricing-thumb mt"><!-- Pricing Thumb 2 Start-->
+                                <div class="pricing-top-content">
+                                    <h3>
+                                        <small>Standard</small>
+                                        $240
+                                    </h3>
+        
+                                    <p>What makes a premium festava?</p>
+                                </div>
+                                
+                                <ul class="pricing-list">
+                                    <li>platform for potential customers</li>
+                                    <li>digital experience</li>
+                                    <li>high-quality sound</li>
+                                    <li>premium content</li>
+                                    <li>live chat support</li>
+                                    <li>standard content</li>
+
+                                </ul>
+
+                                <a href="ticket.html" class="sp-link">
+                                    <span>Buy Ticket</span>
+                                    <svg class="icon">
+                                        <g fill="none" stroke="currentColor">
+                                            <circle cx="16" cy="16" r="15.5"></circle>
+                                            <line x1="10" y1="18" x2="16" y2="12" class="line1"></line>
+                                            <line x1="16" y1="12" x2="22" y2="18" class="line2"></line>
+                                        </g>
+                                    </svg>
+                                </a>
+                                    
+                            </div><!-- Pricing Thumb 2 End-->
+                        </div><!-- Col 2 End-->
+                    </div><!-- Row 2 End-->
+            </div><!-- Pricing Container End-->
+        </section><!-- *** ==== PRICING SECTION END *** ==== -->
+
+        <section class="contact" id="contactSection"><!-- *** ==== CONTACT SECTION START *** ==== -->
+            <div class="container"><!-- Contact Container Start-->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="section-heading">Interested? Let's talk</h2>
+                        
+                        <div class="contact-nav"><!-- Contact Nav Start-->
+                            <div class="contact-wrapTab">
+                                <button class="contact-btn-link active-Btn" id="formBtn">
+                                    <h5>Contact Form</h5>
+                                </button>
+                                <button class="contact-btn-link" id="mapBtn">
+                                    <h5>Google Maps</h5>
+                                </button>
+                            </div>
+                        </div><!-- Contact Nav End-->
+
+                        <div class="tab-content"><!-- Tab Content Start-->
+                            <div class="form-div"><!-- Form Start-->
+                                <form action="" class="custom-form" id="formWrapper">
+                                    <div class="row"><!--Row Start-->
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" id="contact-name" placeholder="Full name" name="contact-name" required>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="email" class="form-control" id="contact-email" placeholder="Email address" name="contact-email" required>
+                                        </div>
+                                    </div><!--Row End-->
+                                    <input type="text" name="contact-company" id="contact-company" class="form-control" placeholder="Company" required="">
+                                    <textarea name="contact-message" rows="3" class="form-control" id="contact-message" placeholder="Message" style="height: 124px;"></textarea>
+                                    <div class="col-lg-4 col-md-10 mx-auto"><!-- Form Btn Start-->
+                                        <button type="submit" class="form-control sm-button">Send Message</button>
+                                    </div><!-- Form Btn Start-->
+                                </form>
+                            </div><!-- Form End-->
+                            <div class="map"><!--Map Start-->
+                                <iframe class="google-map hidden" id="mapWrapper" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29974.469402870927!2d120.94861466021855!3d14.106066818082482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite%2C%20Philippines!5e1!3m2!1sen!2smy!4v1670344209509!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div><!--Map End-->
+                        </div><!-- Tab Content End-->
+                    </div><!-- Col End-->
+                </div><!-- Row End-->
+            </div><!-- Contact Container End-->
+        </section><!-- *** ==== CONTACT SECTION END *** ==== -->
+
+        <footer class="footer-content" id="footerSection"><!-- *** ==== FOOTER SECTION START *** ==== -->
+            <div class="footer-top"><!--Footer Top Div Start-->
+                <div class="container"><!--Footer Top Container Start-->
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h2>Festava Live</h2>
+                        </div>
+                        <div class="col-md-6"><!--Col 2 Div Start-->
+                            <div class="social-icons"><!-- Social Icons Start  -->
+                                <ul>
+                                    <li>
+                                        <a href="#lnk">
+                                            <i class='bx bxl-twitter'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#lnk">
+                                            <i class='bx bxl-apple'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#lnk">
+                                            <i class='bx bxl-instagram'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#lnk">
+                                            <i class='bx bxl-youtube'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#lnk">
+                                            <i class='bx bxl-pinterest-alt'></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- Social Icons End  -->
+                        </div><!--Col 2 Div End-->
+                    </div><!--Row Div End-->
+                </div><!--Footer Top Container End-->
+            </div><!--Footer Top Div End-->
+
+            <div class="container footer-widget"> <!-- Footer Widget Container Start-->
+                <div class="row"><!-- Footer Widget Row Start-->
+                    <div class="col-lg-6">
+                        <h5 class="footer-link-title">Links</h5>
+                        <ul class="f-links">
+                            <li><a href="#heroSection">Home</a></li>
+                            <li><a href="#aboutSection">About</a></li>
+                            <li><a href="#artistSection">Artists</a></li>
+                            <li><a href="#scheduleSection">Schedule</a></li>
+                            <li><a href="#pricingSection">Pricing</a></li>
+                            <li><a href="#contactSection">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-link-title mt">Have a question?</h5>
+                        <p><a href="#no">090-080-0760</a></p>
+                        <p><a href="#em">hello@company.com</a></p>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-link-title mt">Location</h5>
+                        <p class="f-p">Silang Junction South, Tagaytay, Cavite, Philippines</p>
+                        <a href="#contactSection" class="sp-link">
+                            <span>Our Maps</span>
+                            <svg class="icon">
+                                <g fill="none" stroke="currentColor">
+                                    <circle cx="16" cy="16" r="15.5"></circle>
+                                    <line x1="10" y1="18" x2="16" y2="12" class="line1"></line>
+                                    <line x1="16" y1="12" x2="22" y2="18" class="line2"></line>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div><!-- Footer Widget Row End-->
+            </div><!-- Footer Widget Container End-->
+
+            <div class="footer-bottom"><!-- Footer Bottom Start-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <p class="copyright-text mb">Copyright &copy; Festava Live Company</p>
+                        </div>
+                        <div class="col-lg-9">
+                            <ul class="f-links">
+                                <li><a href="#term">Terms & Conditions</a></li>
+                                <li><a href="#term">Privacy Policy</a></li>
+                                <li><a href="#term">Your Feedback</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- Container End-->
+            </div><!-- Footer Bottom End-->
+        </footer><!-- *** ==== FOOTER SECTION END *** ==== -->
+        
+    <!-- Bootstrap Js File  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
