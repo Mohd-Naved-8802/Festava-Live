@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festava-Live</title>
+
+    <!-- Icon Links  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <!-- *** ==== HEADER SECTION START *** ====-->
+    <header>
+        <div class="container top-bar">
+            <i class='bx bx-user'></i>
+            <p>Welcome to Music Festival 2023</p>
+        </div>
+    </header><!-- *** ==== HEADER SECTION END *** ====-->
+    
+    <nav><!-- *** ==== NAV SECTION START *** ====-->
+        <div class="container nav-items"><!-- Nav Container Start -->
+            <a href="#" class="logo">Festava-Live</a>
+            <div class="menu-bar"><!-- Menu Bar Start -->
+                <div class="container"><!-- Menu Bar Container Start -->
+                    <ul id="menuCollapse">
+                        <li><a href="index.html" onclick="home()" id="homeLia">Home</a></li>
+                        <li><a href="index.html#aboutSection" onclick="about()" id="aboutLia">About</a></li>
+                        <li><a href="index.html#artistSection" onclick="artist()" id="artistLia">Artists</a></li>
+                        <li><a href="index.html#scheduleSection" onclick="schedule()" Id="scheduleLia">Schedule</a></li>
+                        <li><a href="index.html#pricingSection" onclick="pricing()" id="pricingLia">Pricing</a></li>
+                        <li><a href="index.html#contactSection" onclick="contact()" id="contactLia">Contact</a></li>
+                    </ul>
+                </div><!-- Menu Bar Container End -->
+            </div><!-- Menu Bar End -->
+ 
+            <div class="button-wrapper d-flex align-items-center"><!-- Nav Button Wrapper Start -->
+                <a href="#buyTicket" class="sm-button">Buy Ticket</a>
+                <div class="toggle-btn" id="toggleButton" onclick="togglebtn()"><!-- Toggle Btn Start -->
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div><!-- Toggle Btn End -->
+            </div><!-- Nav Button Wrapper End -->
+        </div><!-- Nav Container End -->
+    </nav><!-- *** ==== NAV SECTION END *** ====-->
+    
+    <section class="ticket-section">
+        <div class="container"> 
+                <form action="" class="ticket-form"">
+                    <h2 class="form-heading">Get started here</h2>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <input type="text" class="form-control" name="name" placeholder="Full name">
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <input type="email" class="form-control" name="email" placeholder="Email address">
+                        </div>
+                        <input type="tel" class="form-control" name="tel" placeholder="Ph 085-456-7890">
+                        <h5>Choose Ticket Type</h5>
+
+                        <div class="row"><!--Radio Row Start-->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-check form-control">
+                                    <input type="radio" name="ticketForm" class="form-check-input" id="radio1">
+                                    <label class="form-check-label" for="radio1">Eary bird $120
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-check form-control">
+                                    <input type="radio" name="ticketForm" class="form-check-input" id="radio2">
+                                    <label for="radio2" class="form-check-label">Standard $240</label>
+                                </div>                               
+                            </div>
+                        </div><!--Radio Row End-->
+
+                        <input type="number" class="form-control" placeholder="Number of Tickets" name="ticket-form-number">
+                        <textarea name="ticket-form-message" class="form-control" id="ticket-form-message" rows="3" placeholder="Additional Request"></textarea>
+                        <div class="col-xl-4 col-lg-10 col-md-10 col-12 mx-auto">
+                            <button type="submit" class="form-control sm-button">Buy Ticket</button>
+                        </div>
+                    </div>
+                </form>
+        </div>
+    </section>
+    
+    <footer class="footer-content" id="footerSection"><!-- *** ==== FOOTER SECTION START *** ==== -->
+        <div class="footer-top"><!--Footer Top Div Start-->
+            <div class="container"><!--Footer Top Container Start-->
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2>Festava Live</h2>
+                    </div>
+                    <div class="col-md-6"><!--Col 2 Div Start-->
+                        <div class="social-icons"><!-- Social Icons Start  -->
+                            <ul>
+                                <li>
+                                    <a href="#lnk">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#lnk">
+                                        <i class='bx bxl-apple'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#lnk">
+                                        <i class='bx bxl-instagram'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#lnk">
+                                        <i class='bx bxl-youtube'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#lnk">
+                                        <i class='bx bxl-pinterest-alt'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- Social Icons End  -->
+                    </div><!--Col 2 Div End-->
+                </div><!--Row Div End-->
+            </div><!--Footer Top Container End-->
+        </div><!--Footer Top Div End-->
+
+        <div class="container footer-widget"> <!-- Footer Widget Container Start-->
+            <div class="row"><!-- Footer Widget Row Start-->
+                <div class="col-lg-6">
+                    <h5 class="footer-link-title">Links</h5>
+                    <ul class="f-links">
+                        <li><a href="#homeSection">Home</a></li>
+                        <li><a href="#aboutSection">About</a></li>
+                        <li><a href="#ArtistsSection">Artists</a></li>
+                        <li><a href="#scheduleSection">Schedule</a></li>
+                        <li><a href="#pricingSection">Pricing</a></li>
+                        <li><a href="#contactSection">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-link-title mt">Have a question?</h5>
+                    <p><a href="#no">090-080-0760</a></p>
+                    <p><a href="#em">hello@company.com</a></p>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-link-title mt">Location</h5>
+                    <p class="f-p">Silang Junction South, Tagaytay, Cavite, Philippines</p>
+                    <a href="#our-map" class="sp-link">
+                        <span>Our Maps</span>
+                        <svg class="icon">
+                            <g fill="none" stroke="currentColor">
+                                <circle cx="16" cy="16" r="15.5"></circle>
+                                <line x1="10" y1="18" x2="16" y2="12" class="line1"></line>
+                                <line x1="16" y1="12" x2="22" y2="18" class="line2"></line>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div><!-- Footer Widget Row End-->
+        </div><!-- Footer Widget Container End-->
+
+        <div class="footer-bottom"><!-- Footer Bottom Start-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="copyright-text mb">Copyright &copy; Festava Live Company</p>
+                    </div>
+                    <div class="col-lg-9">
+                        <ul class="f-links">
+                            <li><a href="#term">Terms & Conditions</a></li>
+                            <li><a href="#term">Privacy Policy</a></li>
+                            <li><a href="#term">Your Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- Container End-->
+        </div><!-- Footer Bottom End-->
+    </footer><!-- *** ==== FOOTER SECTION END *** ==== -->
+    
+<!-- Bootstrap Js File  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
